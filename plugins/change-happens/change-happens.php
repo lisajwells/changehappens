@@ -10,6 +10,19 @@
 
 
 /***** TinyMCE button to create subscribe-to-blog line *****/
+
+// create shortcode for post editor subscribe-to-blog link
+// add_shortcode('subscribe-to-blog', 'ch_add_subscribe_to_blog_link');
+function ch_add_subscribe_to_blog_link() {
+  $result = '<p>Don\'t miss a post, <a id="subscribe-link" href="#">subscribe here.</a></p>';
+  return $result;
+}
+// using init instead of just add_shortcode so we can move to plugin later, which requires it
+add_action('init', 'ch_shortcodes_init');
+function ch_shortcodes_init(){
+  add_shortcode( 'subscribe-to-blog', 'ch_add_subscribe_to_blog_link' );
+}
+
 // ala http://www.wpbeginner.com/wp-tutorials/how-to-create-a-wordpress-tinymce-plugin/
 
 // If two WordPress plugins have functions with the same name, then this would cause an error. We will avoid this problem by having our functions wrapped in a class.
