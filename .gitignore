@@ -11,8 +11,8 @@
 # To stop tracking a file that is currently tracked, use
 # git rm --cached
 
-# This was written to put in the root, but my repo is in wp-content -lw
 # -----------------------------------------------------------------
+# Original was written to put in the root, but my repo is in wp-content -lw
 
 # ignore everything in the root except the "wp-content" directory.
 # /*
