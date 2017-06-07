@@ -6,16 +6,21 @@
       title: 'Subscribe to Blog link',
       // text: 'Subscribe',
       image: url + '/AWeber_CH_Header-150x150.png',
-      cmd: 'subscribe_to_blog_cmd',
+      // cmd: 'subscribe_to_blog_cmd',
+      onclick: function( e ) {
+        editor.insertContent( '<p>[subscribe_to_blog]</p>');
+      }
+
     });
 
     // Add Command when Button Clicked
-    editor.addCommand('subscribe_to_blog_cmd', function() {
+    // editor.addCommand('subscribe_to_blog_cmd', function() {
 
 
 
-      alert('Button clicked!');
-    });
+      // alert('Button clicked!');
+    // });
 
   }); // end PluginManager
 })();
+
