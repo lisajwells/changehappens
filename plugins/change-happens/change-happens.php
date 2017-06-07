@@ -58,7 +58,7 @@ class TinyMCE_Subscribe_Shortcode_Class {
     */
     function add_tinymce_plugin( $plugin_array ) {
 
-        $plugin_array['custom_link_class'] = plugin_dir_url( __FILE__ ) . 'tinymce-subscribe-shortcode.js';
+        $plugin_array['subscribe_to_blog'] = plugin_dir_url( __FILE__ ) . 'tinymce-subscribe-shortcode.js';
         return $plugin_array;
 
     }
@@ -72,7 +72,7 @@ class TinyMCE_Subscribe_Shortcode_Class {
     */
     function add_tinymce_toolbar_button( $buttons ) {
 
-        array_push( $buttons, '|', 'custom_link_class' );
+        array_push( $buttons, '|', 'subscribe_to_blog' );
         return $buttons;
     }
 
