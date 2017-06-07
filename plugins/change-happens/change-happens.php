@@ -13,7 +13,7 @@
 // ala http://www.wpbeginner.com/wp-tutorials/how-to-create-a-wordpress-tinymce-plugin/
 
 // If two WordPress plugins have functions with the same name, then this would cause an error. We will avoid this problem by having our functions wrapped in a class.
-class TinyMCE_Custom_Link_Class {
+class TinyMCE_Subscribe_Shortcode_Class {
     /**
     * Constructor. Called when the plugin is initialised.
     */
@@ -77,4 +77,4 @@ class TinyMCE_Custom_Link_Class {
     }
 
 } // end class
-$tinymce_custom_link_class = new TinyMCE_Custom_Link_Class;
+$tinymce_subscribe_shortcode_class = new TinyMCE_Subscribe_Shortcode_Class;
