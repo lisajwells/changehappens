@@ -58,7 +58,7 @@ class TinyMCE_Custom_Link_Class {
     */
     function add_tinymce_plugin( $plugin_array ) {
 
-        $plugin_array['custom_link_class'] = plugin_dir_url( __FILE__ ) . 'tinymce-custom-link-class.js';
+        $plugin_array['custom_link_class'] = plugin_dir_url( __FILE__ ) . 'tinymce-subscribe-shortcode.js';
         return $plugin_array;
 
     }
