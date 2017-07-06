@@ -181,11 +181,11 @@ div#secondary {
 #sticky-sidebar img {
     display: block;
     max-width: 280px;
-    margin: 0 auto 2em;
+    margin: 0 auto 1.5em;
 }
 
 #sticky-sidebar img:last-of-type {
-    margin: 0 auto 0;
+    /*margin: 0 auto 0;*/
 }
 
 
